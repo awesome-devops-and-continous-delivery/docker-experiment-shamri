@@ -1,3 +1,4 @@
-FROM ubuntu:latest
-RUN apt-get update
-RUN apt-get install -y curl nginx
+FROM nginx
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
